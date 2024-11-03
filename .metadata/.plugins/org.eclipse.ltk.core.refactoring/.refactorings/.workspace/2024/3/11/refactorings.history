@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;fodase&apos;" deleteContents="false" description="Delete resource &apos;fodase&apos;" element1="/fodase" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1710205464436"/>
+</session>

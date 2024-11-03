@@ -1,0 +1,29 @@
+package src;
+
+public class Solution {
+	public static int heightChecker(int[] heights) {
+		int[] expected = new int[heights.length];
+	}
+	
+	private void mergeSort(int[] arr, int length) {
+		
+	}
+	
+	private void merge(int[] arr, int[] leftArr, int[] rightArr, int left, int right) {
+		int i=0, j=0, k=0;
+		while (i<left && j<right) {
+			if(leftArr[i]<=rightArr[j]) {
+				arr[k++]=rightArr[i++];
+			}
+			else {
+				arr[k++]=rightArr[j++];
+			}
+		}
+		while (i<left) {
+			arr[k++]=leftArr[i++];
+		}
+		while (j<right) {
+			arr[k++]=rightArr[j++];
+		}
+	}
+}

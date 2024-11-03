@@ -1,0 +1,56 @@
+//A school is trying to take an annual photo of all the students.
+//The students are asked to stand in a single file line in non-decreasing order by height.
+//Let this ordering be represented by the integer array expected where expected[i] is the
+//expected height of the ith student in line.
+
+//You are given an integer array heights representing the current order that the students
+//are standing in. Each heights[i] is the height of the ith student in line (0-indexed).
+
+//Return the number of indices where heights[i] != expected[i].
+
+package src;
+
+public class Solution {
+	public static int heightChecker(int[] heights) {
+		int[] expected = new int[heights.length];
+	}
+	
+	private void mergeSort(int[] arr, int length) {
+		if (length<2) {
+			return;
+		}
+		int mid = length/2;
+		int[] leftArr = new int[mid];
+		int[] rightArr = new int[length-mid];
+		
+		for (int i=0; i<mid; i++) {
+			leftArr[i]=arr[i];
+		}
+		for (int i=mid; i<length; i++) {
+			rightArr[i-mid]=arr[i];
+		}
+		
+		mergeSort(leftArr, mid);
+		mergeSort(rightArr, length-mid);
+		
+		merge(arr,leftArr,rightArr,mid,length-mid);
+	}
+	
+	private void merge(int[] arr, int[] leftArr, int[] rightArr, int left, int right) {
+		int i=0, j=0, k=0;
+		while (i<left && j<right) {
+			if(leftArr[i]<=rightArr[j]) {
+				arr[k++]=rightArr[i++];
+			}
+			else {
+				arr[k++]=rightArr[j++];
+			}
+		}
+		while (i<left) {
+			arr[k++]=leftArr[i++];
+		}
+		while (j<right) {
+			arr[k++]=rightArr[j++];
+		}
+	}
+}

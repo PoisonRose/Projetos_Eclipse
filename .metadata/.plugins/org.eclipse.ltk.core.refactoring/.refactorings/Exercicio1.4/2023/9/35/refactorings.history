@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Convert local variable &apos;exerc4.Main.main(...).entrada&apos; in &apos;exerc4.Main.main(...)&apos; to field&#x0D;&#x0A;- Original project: &apos;Exercicio4&apos;&#x0D;&#x0A;- Original element: &apos;exerc4.Main.main(...).entrada&apos;&#x0D;&#x0A;- Field name: &apos;entrada&apos;&#x0D;&#x0A;- Initialize field in method&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Declare field &apos;static&apos;" description="Convert local variable &apos;entrada&apos; to field" final="false" flags="2" id="org.eclipse.jdt.ui.promote.temp" initialize="1" input="/src&lt;exerc4{Main.java" name="entrada" selection="153 32" stamp="1693614099803" static="true" version="1.0" visibility="2"/>
+</session>
